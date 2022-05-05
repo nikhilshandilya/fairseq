@@ -99,7 +99,7 @@ class GeneratorHubInterface(nn.Module):
         # optimize model for generation
         for model in self.models:
             # fp16 hardcoded
-            model.half()
+            print("testing if logged")
             model.prepare_for_inference_(cfg)
 
         # Load alignment dictionary for unknown word replacement
